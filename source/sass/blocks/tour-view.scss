@@ -1,0 +1,58 @@
+.tour-view {
+  max-width: 1170px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 80px;
+  position: relative;
+}
+
+.tour-view__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tour-view__picture {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  min-width: 430px;
+  min-height: 596px;
+  object-fit: cover;
+}
+
+.tour-view__title {
+  min-width: 470px;
+  color: $dark;
+  font-size: 55px;
+  line-height: 90px;
+  letter-spacing: -1.25px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 9px;
+  position: relative;
+  height: min-content;
+  &::after {
+    content: '';
+    width: 175px;
+    height: 3px;
+    background-color: $bittersweet;
+    position: absolute;
+    bottom: -16px;
+    left: 0px;
+  }
+}
+
+.tour-view__description {
+  color: rgba(44, 46, 63, 0.7);
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  max-width: 370px;
+  margin-top: 49px;
+  margin-bottom: 48px;
+}
+
+.tour-view__buy {
+  @include button(250px, 75px)
+}

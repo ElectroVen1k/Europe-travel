@@ -1,0 +1,21 @@
+.group-tour {
+  margin: 0;
+  margin-left: 61px;
+}
+
+.group-tour__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $woodsmoke;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.group-tour__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(20, 21, 23, 0.5);
+  margin: 0;
+  max-width: 325px;
+}

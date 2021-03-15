@@ -1,0 +1,734 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat"), url("../fonts/montserrat-v15-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v15-latin_cyrillic-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat"), url("../fonts/montserrat-v15-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v15-latin_cyrillic-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Montserrat"), url("../fonts/montserrat-v15-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v15-latin_cyrillic-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat"), url("../fonts/montserrat-v15-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v15-latin_cyrillic-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+body {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.header {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.intro {
+  max-width: none;
+  color: #FFFFFF;
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.intro__background-container {
+  background-image: url("../../img/preview-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 860px; }
+
+.intro__wrapper {
+  margin-left: auto;
+  margin-top: 185px;
+  margin-right: 70px; }
+
+.intro__title {
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 29px;
+  max-width: 400px;
+  letter-spacing: -1.11px; }
+
+.intro__text {
+  margin: 0px;
+  margin-bottom: 34px;
+  font-size: 16px;
+  line-height: 27px;
+  max-width: 375px;
+  font-weight: 400;
+  letter-spacing: -0.47px; }
+
+.intro__button {
+  height: 74px;
+  width: 340px;
+  background-color: #FE7865;
+  color: #FFFFFF;
+  font-size: 10px;
+  border: none;
+  border-radius: 2px;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  padding-right: 134px;
+  position: relative; }
+  @media (min-width: 768px) {
+    .intro__button {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px; } }
+  .intro__button::after {
+    content: '';
+    background-image: url("../../img/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 28px;
+    right: 40px;
+    height: 15px;
+    width: 15px; }
+
+.main-nav__list {
+  list-style: none;
+  margin: 36px auto 31px;
+  padding: 0;
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px; }
+
+.main-nav__item {
+  margin-left: 40px; }
+  .main-nav__item--tel {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-left: 90px;
+    margin-right: 14px;
+    position: relative;
+    text-decoration: underline; }
+    .main-nav__item--tel::before {
+      content: '';
+      background-image: url("../../img/phone-logo.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 0px;
+      left: -38px;
+      height: 30px;
+      width: 30px; }
+  .main-nav__item--logo {
+    margin-right: auto;
+    margin-left: 0px; }
+
+.tours {
+  color: #2C2E3F;
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.tours__title {
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+  letter-spacing: -1.25px;
+  margin-top: 200px;
+  position: relative;
+  max-width: 350px;
+  margin-bottom: 65px; }
+  .tours__title::before {
+    content: '';
+    width: 228px;
+    height: 4px;
+    background-color: #FE7865;
+    position: absolute;
+    bottom: -33px;
+    left: 1px; }
+
+.tours__text {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  color: rgba(44, 46, 63, 0.7);
+  max-width: 330px;
+  margin-bottom: 55px; }
+
+.tours__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.tours__item:not(:nth-child(3n)) {
+  margin-right: 60px; }
+  .tours__item:not(:nth-child(3n)):nth-child(5n) {
+    margin-right: 0;
+    margin-left: 60px; }
+
+.tours__link {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 37px; }
+
+.tours__name {
+  color: #2C2E3F;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  letter-spacing: -0.415px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 215px;
+  height: 63px;
+  background-color: #FFFFFF;
+  position: relative;
+  bottom: 62px;
+  left: 68px;
+  border: none;
+  margin: 0; }
+
+.main__countries {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.main__price {
+  margin: 0 auto;
+  margin-top: 238px;
+  margin-bottom: 139px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.main__question {
+  max-width: 1170px;
+  margin: 0 auto 170px;
+  display: flex;
+  position: relative; }
+
+.country-selection {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: -2px; }
+
+.country-selection__item {
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3); }
+  .country-selection__item:not(:nth-child(5n)) {
+    padding-right: 99px; }
+
+.country-selection__link {
+  color: rgba(44, 46, 63, 0.3);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.415px; }
+  .country-selection__link--active {
+    color: #FE7865; }
+
+.tour-view {
+  max-width: 1170px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 80px;
+  position: relative; }
+
+.tour-view__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.tour-view__picture {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  min-width: 430px;
+  min-height: 596px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.tour-view__title {
+  min-width: 470px;
+  color: #2C2E3F;
+  font-size: 55px;
+  line-height: 90px;
+  letter-spacing: -1.25px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 9px;
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content; }
+  .tour-view__title::after {
+    content: '';
+    width: 175px;
+    height: 3px;
+    background-color: #FE7865;
+    position: absolute;
+    bottom: -16px;
+    left: 0px; }
+
+.tour-view__description {
+  color: rgba(44, 46, 63, 0.7);
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  max-width: 370px;
+  margin-top: 49px;
+  margin-bottom: 48px; }
+
+.tour-view__buy {
+  height: 75px;
+  width: 250px;
+  background-color: #FE7865;
+  color: #FFFFFF;
+  font-size: 10px;
+  border: none;
+  border-radius: 2px;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Arial', sans-serif; }
+  @media (min-width: 768px) {
+    .tour-view__buy {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px; } }
+
+.tour-feedback {
+  width: 382px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 113px;
+  right: 0;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  display: flex;
+  flex-wrap: wrap; }
+
+.tour-feedback__title {
+  color: #2C2E3F;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 500;
+  letter-spacing: -0.69px;
+  margin: 30px 0px 34px 30px;
+  position: relative; }
+  .tour-feedback__title::after {
+    content: '';
+    width: 68px;
+    height: 1px;
+    background-color: #FE7865;
+    position: absolute;
+    bottom: -12px;
+    left: -1px; }
+
+.tour-feedback__text {
+  color: rgba(44, 46, 63, 0.7);
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.41px;
+  margin: 0;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  max-width: 330px; }
+
+.tour-feedback__user-logo {
+  width: 38px;
+  height: 38px;
+  margin-left: 30px; }
+
+.tour-feedback__user-name {
+  color: #2C2E3F;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: -0.47px;
+  margin: 0;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 38px; }
+
+.price {
+  color: #2C2E3F;
+  font-size: 16px;
+  line-height: 32px;
+  max-width: 1170px;
+  position: relative; }
+
+.price__title {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-left: 29px;
+  margin-bottom: 42px; }
+  .price__title--all-inclusive {
+    color: #FE7865; }
+  .price__title--econom {
+    color: rgba(20, 21, 23, 0.7); }
+
+.price__text {
+  max-width: 290px;
+  margin: 0;
+  margin-left: 30px;
+  margin-bottom: 58px;
+  line-height: 24px;
+  position: relative; }
+  .price__text::after {
+    content: '';
+    width: 310px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -27px; }
+
+.price__container {
+  width: 370px;
+  min-height: 672px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-right: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .price__container--all-inclusive {
+    border: 2px solid #FE7865; }
+    .price__container--all-inclusive .price__text::after {
+      background-color: #FE7865;
+      opacity: 0.5; }
+  .price__container--econom {
+    border: 1px solid rgba(44, 46, 63, 0.3); }
+    .price__container--econom .price__text::after {
+      background-color: rgba(44, 46, 63, 0.3); }
+
+.price__cost {
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: bold;
+  position: absolute;
+  top: 40px;
+  right: 30px; }
+  .price__cost--all-inclusive {
+    color: #FE7865; }
+  .price__cost--econom {
+    color: rgba(20, 21, 23, 0.7); }
+
+.price__buy-tour {
+  height: 75px;
+  width: 310px;
+  background-color: #FE7865;
+  color: #FFFFFF;
+  font-size: 10px;
+  border: none;
+  border-radius: 2px;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  margin-top: auto;
+  margin-left: 29px;
+  margin-bottom: 28px; }
+  @media (min-width: 768px) {
+    .price__buy-tour {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px; } }
+
+.price-packages {
+  position: absolute;
+  top: 0;
+  right: -10px; }
+
+.price-packages__title {
+  color: #2C2E3F;
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  position: relative;
+  margin-top: 113px;
+  margin-bottom: 48px; }
+  .price-packages__title::after {
+    content: '';
+    width: 175px;
+    height: 3px;
+    background-color: #FE7865;
+    position: absolute;
+    left: 0;
+    bottom: -17px; }
+
+.price-packages__text {
+  max-width: 300px;
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 27px;
+  color: rgba(44, 46, 63, 0.7);
+  margin-bottom: 60px; }
+
+.price-packages__contact {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: #141517;
+  margin: 0;
+  margin-left: 45px; }
+
+.price-packages__tel {
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  margin-left: 45px;
+  margin-top: 12px;
+  position: relative; }
+  .price-packages__tel::before {
+    content: '';
+    background-image: url(../../img/phone-logo2.svg);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: -48px; }
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 60px; }
+  .features--econom .features__item::before {
+    background-image: url(../../img/black-tick.svg);
+    left: -31px; }
+  .features--all-inclusive .features__item:first-child {
+    margin-bottom: 6px; }
+
+.features__item {
+  margin-bottom: 15px;
+  max-width: 280px;
+  position: relative; }
+  .features__item::before {
+    content: '';
+    background-image: url(../../img/orange-tick.svg);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 12px;
+    position: absolute;
+    left: -28px;
+    top: 10px; }
+
+.question {
+  width: 656px;
+  min-height: 315px;
+  background-color: #FFFFFF;
+  color: #141517;
+  position: absolute;
+  top: 70px;
+  right: -12px;
+  display: flex;
+  flex-direction: column; }
+
+.question__title {
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 50px auto 13px; }
+
+.question__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto 22px; }
+
+.form {
+  display: flex;
+  margin: 0 50px;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.form__input {
+  width: calc(50% - 10px);
+  border: 1px solid #000000;
+  height: 50px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 12px; }
+  .form__input:first-child {
+    margin-right: 20px; }
+  .form__input--tel {
+    padding-left: 25px; }
+
+.form__button {
+  height: 50px;
+  width: 176px;
+  background-color: #FE7865;
+  color: #FFFFFF;
+  font-size: 10px;
+  border: none;
+  border-radius: 2px;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .form__button {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px; } }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.more-travel {
+  margin-left: 12px;
+  position: relative; }
+  .more-travel::after {
+    content: '';
+    width: 1px;
+    height: 189px;
+    background-color: #D7D9DF;
+    position: absolute;
+    top: 0;
+    right: -12px; }
+
+.more-travel__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #141517;
+  margin: 0; }
+
+.more-travel__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(20, 21, 23, 0.5);
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  padding: 0;
+  margin-top: 22px; }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-left: 102px;
+  position: relative; }
+  .contacts p::before {
+    content: '';
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -2px;
+    left: -42px; }
+  .contacts::after {
+    content: '';
+    width: 1px;
+    height: 189px;
+    background-color: #D7D9DF;
+    position: absolute;
+    top: 0;
+    right: -12px; }
+
+.contacts__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #141517;
+  margin: 0;
+  margin-bottom: 8px; }
+
+.contacts__mail {
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline;
+  color: #FE7865;
+  margin-left: 43px;
+  margin-bottom: 20px;
+  position: relative; }
+  .contacts__mail::before {
+    background-image: url(../../img/mail.svg); }
+
+.contacts__tel {
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: underline;
+  color: #FE7865;
+  margin: 0;
+  margin-left: 43px;
+  position: relative; }
+  .contacts__tel::before {
+    background-image: url(../../img/phone-logo3.svg); }
+
+.group-tour {
+  margin: 0;
+  margin-left: 61px; }
+
+.group-tour__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #141517;
+  margin: 0;
+  margin-bottom: 20px; }
+
+.group-tour__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(20, 21, 23, 0.5);
+  margin: 0;
+  max-width: 325px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+@mixin button($width, $height) {
+  height: $height;
+  width: $width;
+  background-color: $bittersweet;
+  color: $white;
+  font-size: 10px;
+  border: none;
+  border-radius: 2px;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+
+  @media (min-width: $tablet-width) {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+}

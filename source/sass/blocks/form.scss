@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  margin: 0 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form__input {
+  width: calc(50% - 10px);
+  border: 1px solid $black;
+  height: 50px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 12px;
+
+  &:first-child {
+    margin-right: 20px;
+  }
+
+  &--tel {
+    padding-left: 25px;
+  }
+}
+
+.form__button {
+  @include button(176px, 50px);
+  margin-bottom: 50px;
+}

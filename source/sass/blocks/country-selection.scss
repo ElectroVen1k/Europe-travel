@@ -1,0 +1,27 @@
+.country-selection {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: -2px;
+}
+
+.country-selection__item {
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+  &:not(:nth-child(5n)) {
+    padding-right: 99px;
+  }
+}
+
+.country-selection__link {
+  color: rgba(44, 46, 63, 0.3);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.415px;
+  &--active {
+    color: $bittersweet;
+  }
+}

@@ -1,0 +1,35 @@
+.more-travel {
+  margin-left: 12px;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 1px;
+    height: 189px;
+    background-color: $mischka;
+    position: absolute;
+    top: 0;
+    right: -12px;
+  }
+}
+
+.more-travel__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $woodsmoke;
+  margin: 0;
+}
+
+.more-travel__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(20, 21, 23, 0.5);
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  padding: 0;
+  margin-top: 22px;
+}

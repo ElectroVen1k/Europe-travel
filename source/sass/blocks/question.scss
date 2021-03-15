@@ -1,0 +1,25 @@
+.question {
+  width: 656px;
+  min-height: 315px;
+  background-color: $white;
+  color: $woodsmoke;
+  position: absolute;
+  top: 70px;
+  right: -12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.question__title {
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 50px auto 13px;
+
+}
+
+.question__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto 22px;
+}

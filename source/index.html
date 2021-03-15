@@ -4,56 +4,72 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Путешествие по Европе</title>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='css/style.css'>
   </head>
   <body>
     <header class="header">
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--logo">
-            <a class="main-nav__link main-nav__link--logo">
+            <a class="main-nav__link main-nav__link--logo" href="">
               <picture>
-                <source media="(min-width: 1200px)" srcset="">
-                <source media="(min-width: 768px)" srcset="">
-                <img class="main-nav__logo" src="" alt="Логотип">
+                <img class="main-nav__logo" src="img/way-logo.svg" alt="Логотип" width="57" height="22">
               </picture>
             </a>
           </li>
-          <li class="main-nav__item">О путешествии</li>
-          <li class="main-nav__item">Цены</li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#travel"> О путешествии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#price">Цены</a>
+          </li>
           <li class="main-nav__item main-nav__item--tel"> +7 (499) -784-684-46</li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <section class="main__intro intro">
-        <h1 class="intro__title">Путешестие по Европе</h1>
-        <p class="intro__text">В этом туре вы откроете для себя европу в новом свете. Вас ждёт: море, горы, а также потрясающая красота природы</p>
-        <button type="button" class="intro__button button">Смотреть тур</button> 
-      </section>
-      <section class="main__tours tours">
+      <div class="intro__background-container">
+        <section class="main__intro intro">
+          <div class="intro__wrapper">
+            <h1 class="intro__title">Путешествие по Европе</h1>
+            <p class="intro__text">В этом туре вы откроете для себя Eвропу в новом свете. Вас ждёт: море, горы, а также потрясающая красота природы</p>
+            <button type="button" class="intro__button">Смотреть тур</button>
+          </div>
+        </section>
+      </div>
+      <section class="main__tours tours" id="travel">
         <h2 class="tours__title">Места посещения</h2>
         <p class="tours__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
         <ul class="tours__list">
           <li class="tours__item">
-            <p class="tours__name">Греция</p>
-            <img class="tours__picture" src="" width="" height="" alt="Греция">
+            <a class="tours__link" href="#Greece">
+              <p class="tours__name">Греция</p>
+              <img class="tours__picture" src="img/greece.jpg" width="350" height="430" alt="Греция">
+            </a>
+            </li>
+          <li class="tours__item">
+            <a class="tours__link" href="#Albania">
+              <p class="tours__name">Албания</p>
+              <img class="tours__picture" src="img/albania.jpg" width="350" height="430" alt="Албания">
+            </a>
           </li>
           <li class="tours__item">
-            <p class="tours__name">Албания</p>
-            <img class="tours__picture" src="" width="" height="" alt="Албания">
+            <a class="tours__link" href="#Macedonia">
+              <p class="tours__name">Македония</p>
+              <img class="tours__picture" src="img/macedonia.jpg" width="350" height="430" alt="Македония">
+            </a>
           </li>
           <li class="tours__item">
-            <p class="tours__name">Македония</p>
-            <img class="tours__picture" src="" width="" height="" alt="Македония">
+            <a class="tours__link" href="#Montenegro">
+              <p class="tours__name">Черногория</p>
+              <img class="tours__picture" src="img/montenegro.jpg" width="350" height="430" alt="Черногория">
+            </a>
           </li>
           <li class="tours__item">
-            <p class="tours__name">Черногория</p>
-            <img class="tours__picture" src="" width="" height="" alt="Черногория">
-          </li>
-          <li class="tours__item">
-            <p class="tours__name">Хорватия</p>
-            <img class="tours__picture" src="" width="" height="" alt="Хорватия">
+            <a class="tours__link" href="#Croatia">
+              <p class="tours__name">Хорватия</p>
+              <img class="tours__picture" src="img/croatia.jpg" width="350" height="430" alt="Хорватия">
+            </a>
           </li>
         </ul>
       </section>
@@ -77,109 +93,121 @@
         </ul>
         <ul class="tour-view">
           <li class="tour-view__item">
-            <h3 class="tour-view__title">Греция</h3>
-            <p class="tour-view__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
-            <button class="tour-view__buy button" type="button" >Купить тур сейчас</button>
-            <img class="tour-view__picture" src="" alt="" width="" height="">
+            <div class="tour-view__description-container">
+              <h3 class="tour-view__title">Греция</h3>
+              <p class="tour-view__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
+              <button class="tour-view__buy" type="button" >Купить тур сейчас</button>
+            </div>
+            <img class="tour-view__picture" src="img/greece.jpg" alt="" width="430" height="596">
             <div class="tour-view__feedback tour-feedback">
               <h4 class="tour-feedback__title">Отзывы</h4>
               <p class="tour-feedback__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
-              <img class="tour-feedback__user-logo" src="" width="" height="" alt="">
+              <img class="tour-feedback__user-logo" src="img/Влада Г.jpg" width="38" height="38" alt="">
               <p class="tour-feedback__user-name">Влада Голицина</p>
             </div>
           </li>
-          <li class="tour-view__item">
-            <h3 class="tour-view__title">Албания</h3>
-            <p class="tour-view__description">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния. </p>
-            <button class="tour-view__buy button" type="button" >Купить тур сейчас</button>
-            <img class="tour-view__picture" src="" alt="" width="" height="">
+          <li class="tour-view__item visually-hidden">
+            <div class="tour-view__description-container">
+              <h3 class="tour-view__title">Албания</h3>
+              <p class="tour-view__description">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния. </p>
+              <button class="tour-view__buy" type="button" >Купить тур сейчас</button>
+            </div>
+            <img class="tour-view__picture" src="img/albania.jpg" alt="" width="430" height="596">
             <div class="tour-view__feedback tour-feedback">
               <h4 class="tour-feedback__title">Отзывы</h4>
               <p class="tour-feedback__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
-              <img class="tour-feedback__user-logo" src="" width="" height="" alt="">
+              <img class="tour-feedback__user-logo" src="img/Маришка.jpg" width="38" height="38" alt="">
               <p class="tour-feedback__user-name">Маришка</p>
             </div>
           </li>
-          <li class="tour-view__item">
-            <h3 class="tour-view__title">Македония</h3>
-            <p class="tour-view__description">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
-            <button class="tour-view__buy button" type="button" >Купить тур сейчас</button>
-            <img class="tour-view__picture" src="" alt="" width="" height="">
+          <li class="tour-view__item visually-hidden">
+            <div class="tour-view__description-container">
+              <h3 class="tour-view__title">Македония</h3>
+              <p class="tour-view__description">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
+              <button class="tour-view__buy" type="button" >Купить тур сейчас</button>
+            </div>
+            <img class="tour-view__picture" src="img/macedonia.jpg" alt="" width="430" height="596">
             <div class="tour-view__feedback tour-feedback">
               <h4 class="tour-feedback__title">Отзывы</h4>
               <p class="tour-feedback__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
-              <img class="tour-feedback__user-logo" src="" width="" height="" alt="">
+              <img class="tour-feedback__user-logo" src="img/Михаил К.jpg" width="38" height="38" alt="">
               <p class="tour-feedback__user-name">Михаил Кузьмин</p>
             </div>
           </li>
-          <li class="tour-view__item">
-            <h3 class="tour-view__title">Черногория</h3>
-            <p class="tour-view__description">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
-            <button class="tour-view__buy button" type="button" >Купить тур сейчас</button>
-            <img class="tour-view__picture" src="" alt="" width="" height="">
+          <li class="tour-view__item visually-hidden">
+            <div class="tour-view__description-container">
+              <h3 class="tour-view__title">Черногория</h3>
+              <p class="tour-view__description">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
+              <button class="tour-view__buy" type="button" >Купить тур сейчас</button>
+            </div>
+            <img class="tour-view__picture" src="img/montenegro.jpg" alt="" width="430" height="596">
             <div class="tour-view__feedback tour-feedback">
               <h4 class="tour-feedback__title">Отзывы</h4>
               <p class="tour-feedback__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
-              <img class="tour-feedback__user-logo" src="" width="" height="" alt="">
+              <img class="tour-feedback__user-logo" src="img/Анастасия М.jpg" width="38" height="38" alt="">
               <p class="tour-feedback__user-name">Анастасия Мей</p>
             </div>
           </li>
-          <li class="tour-view__item">
-            <h3 class="tour-view__title">Хорватия</h3>
-            <p class="tour-view__description">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
-            <button class="tour-view__buy button" type="button" >Купить тур сейчас</button>
-            <img class="tour-view__picture" src="" alt="" width="" height="">
+          <li class="tour-view__item visually-hidden">
+            <div class="tour-view__description-container">
+              <h3 class="tour-view__title">Хорватия</h3>
+              <p class="tour-view__description">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
+              <button class="tour-view__buy" type="button" >Купить тур сейчас</button>
+            </div>
+            <img class="tour-view__picture" src="img/croatia.jpg" alt="" width="430" height="596">
             <div class="tour-view__feedback tour-feedback">
               <h4 class="tour-feedback__title">Отзывы</h4>
               <p class="tour-feedback__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
-              <img class="tour-feedback__user-logo" src="" width="" height="" alt="">
+              <img class="tour-feedback__user-logo" src="img/Владимир М.jpg" width="38" height="38" alt="">
               <p class="tour-feedback__user-name">Владимир Мулицин</p>
             </div>
           </li>
         </ul>
       </section>
-      <section class="main__price ">
-        <div class="all-inclusive">
-          <h4 class="all-inclusive__title">Комплексный</h4>
-          <p class="all-inclusive__cost">$1999</p>
-          <p class="all-inclusive__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-          <ul class="all-inclusive__features features">
+      <section class="main__price price" id="price">
+        <div class="price__container price__container--all-inclusive">
+          <h4 class="price__title price__title--all-inclusive">Комплексный
+            <span class="price__cost">$1999</span>
+          </h4>
+          <p class="price__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+          <ul class="price__features features features--all-inclusive">
             <li class="features__item">Разработанный маршрут с гидом группы</li>
             <li class="features__item">Перелет, трансфер и проживание в отелях</li>
             <li class="features__item">Завтраки, ужины в отелях и ланчи на природе</li>
             <li class="features__item">Экскурсии по удивительно красивым местам Европы</li>
           </ul>
-          <button class="all-inclusive__buy-tour button" type="button" >Купить тур сейчас</button>
+          <button class="price__buy-tour" type="button" >Купить тур сейчас</button>
         </div>
-        <div class="econom">
-          <h4 class="econom__title">Экономный</h4>
-          <p class="econom__cost">$1399</p>
-          <p class="econom__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-          <ul class="econom__features features">
+        <div class="price__container price__container--econom">
+          <h4 class="price__title price__title--econom">Экономный
+            <span class="price__cost">$1399</span>
+          </h4>
+          <p class="price__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+          <ul class="price__features features features--econom">
             <li class="features__item">Разработанный маршрут с гидом группы</li>
             <li class="features__item">Перелет и трансфер</li>
             <li class="features__item">Проживание в хостелах при отелях </li>
             <li class="features__item">Только завтраки в отелях </li>
             <li class="features__item">Экскурсии по удивительно красивым местам Европы</li>
           </ul>
-          <button class="econom__buy-tour button" type="button" >Купить тур сейчас</button>
+          <button class="price__buy-tour" type="button" >Купить тур сейчас</button>
         </div>
         <div class="price-packages">
           <h3 class="price-packages__title">Цены</h3>
-          <p class="price-packages">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
+          <p class="price-packages__text">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
           <p class="price-packages__contact">Свяжитесь с нами</p>
           <p class="price-packages__tel">+7 (499) -784-684-46</p>
         </div>
       </section>
       <section class="main__question">
-        <img src="" alt="фон" width="" height="">
+        <img src="img/question.jpg" alt="Морской закат" width="844" height="455">
         <div class="question">
           <h4 class="question__title">У Вас остались вопросы?</h4>
           <p class="question__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
           <form class="question__form form" action="https://echo.htmlacademy.ru/"   method="post">
-            <input class="form__input" type="tel" name="Телефон" placeholder="+7 Введите 10   цифр номера">
+            <input class="form__input form__input--tel" type="tel" name="Телефон" placeholder="+7  Введите 10   цифр номера">
             <input class="form__input" type="email" name="E-mail" placeholder="E-mail">
-            <button class="form__button button" type="submit">Отправить</button>
+            <button class="form__button" type="submit">Отправить</button>
           </form>
         </div>
       </section>

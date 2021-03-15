@@ -1,0 +1,36 @@
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 60px;
+
+  &--econom {
+    .features__item::before {
+      background-image: url(../../img/black-tick.svg);
+      left: -31px;
+    }
+  }
+
+  &--all-inclusive {
+    .features__item:first-child {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.features__item {
+  margin-bottom: 15px;
+  max-width: 280px;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-image: url(../../img/orange-tick.svg);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 12px;
+    position: absolute;
+    left: -28px;
+    top: 10px;
+  }
+}
