@@ -7,13 +7,14 @@
 
 .form__input {
   width: calc(50% - 10px);
-  border: 1px solid $black;
+  border:  solid rgba(44, 46, 63, 0.3);
   height: 50px;
   box-sizing: border-box;
   margin-bottom: 25px;
   font-size: 14px;
   line-height: 17px;
   padding-left: 12px;
+  font-family: 'Montserrat', 'Arial', sans-serif;
 
   &:first-child {
     margin-right: 20px;

@@ -237,7 +237,8 @@ a {
   margin-left: 0px; }
 
 .main-nav__logo {
-  position: absolute; }
+  position: absolute;
+  top: 38px; }
 
 .main-nav__toggler {
   display: none; }
@@ -256,7 +257,8 @@ a {
   .main-nav__logo {
     margin-top: 18px;
     width: 44px;
-    height: 18px; }
+    height: 18px;
+    top: 0px; }
   .main-nav__toggler {
     width: 72px; }
     .main-nav__toggler::before {
@@ -1161,13 +1163,14 @@ a {
 
 .form__input {
   width: calc(50% - 10px);
-  border: 1px solid #000000;
+  border: solid rgba(44, 46, 63, 0.3);
   height: 50px;
   box-sizing: border-box;
   margin-bottom: 25px;
   font-size: 14px;
   line-height: 17px;
-  padding-left: 12px; }
+  padding-left: 12px;
+  font-family: 'Montserrat', 'Arial', sans-serif; }
   .form__input:first-child {
     margin-right: 20px; }
   .form__input--tel {
@@ -1458,5 +1461,166 @@ a {
   .group-tour {
     grid-row: 3/4;
     margin: 23px auto 10px; } }
+
+.buy-popup {
+  display: flex;
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: calc(50% - 363px);
+  width: 726px;
+  height: 444px;
+  background-color: #FBF8F8; }
+
+.buy-popup__button {
+  height: 50px;
+  width: 176px;
+  background-color: #FE7865;
+  color: #FFFFFF;
+  font-size: 10px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 2px;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0 auto 90px;
+  margin-top: auto; }
+  @media (min-width: 767px) and (max-width: 1023px) {
+    .buy-popup__button {
+      width: 250px;
+      height: 50px;
+      font-size: 10px;
+      line-height: 12px;
+      margin: 0 auto;
+      font-weight: 500; } }
+  @media (max-width: 767px) {
+    .buy-popup__button {
+      width: 288px;
+      height: 50px;
+      margin: 0 auto;
+      font-size: 10px;
+      font-weight: 500; } }
+  @media (min-width: 767px) and (max-width: 1023px) {
+    .buy-popup__button {
+      width: 176px; } }
+
+.buy-popup__form {
+  display: flex;
+  flex-wrap: wrap; }
+
+.buy-popup__title {
+  width: 100%;
+  padding: 0;
+  margin-top: 72px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  line-height: 43px;
+  font-weight: 600;
+  text-align: center;
+  color: #48494D; }
+
+.buy-popup__input {
+  margin: 0 auto;
+  width: 270px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 13px;
+  border: 1px solid #D7D9DF;
+  font-family: 'Montserrat', 'Arial', sans-serif; }
+  .buy-popup__input--tel {
+    padding-left: 25px; }
+
+.buy-popup__close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  top: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 4; }
+  .buy-popup__close::before, .buy-popup__close::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 8px;
+    width: 34px;
+    height: 1px;
+    background-color: rgba(20, 21, 23, 0.2); }
+  .buy-popup__close::before {
+    transform: rotate(45deg); }
+  .buy-popup__close::after {
+    transform: rotate(-45deg); }
+
+@media (max-width: 767px) {
+  .buy-popup {
+    width: 100%;
+    left: 0px;
+    min-height: 568px; }
+  .buy-popup__form {
+    margin: 0 16px; }
+  .buy-popup__picture {
+    display: none; }
+  .buy-popup__title {
+    margin-top: 100px; }
+  .buy-popup__input {
+    width: 100%; }
+  .buy-popup__button {
+    margin-top: 0px;
+    margin-bottom: 185px; }
+  .buy-popup__close::before, .buy-popup__close::after {
+    top: 30px;
+    right: 14px; } }
+
+.success-popup {
+  min-height: 444px;
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #FBF8F8;
+  display: none; }
+
+.success-popup__text {
+  font-size: 25px;
+  line-height: 42px;
+  font-weight: 500;
+  color: #48494D;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px; }
+
+.success-popup__close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  top: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 4; }
+  .success-popup__close::before, .success-popup__close::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 8px;
+    width: 34px;
+    height: 1px;
+    background-color: rgba(20, 21, 23, 0.2); }
+  .success-popup__close::before {
+    transform: rotate(45deg); }
+  .success-popup__close::after {
+    transform: rotate(-45deg); }
 
 /*# sourceMappingURL=style.css.map */

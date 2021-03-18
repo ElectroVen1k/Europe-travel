@@ -43,6 +43,7 @@
 
 .main-nav__logo {
   position: absolute;
+  top: 38px;
 }
 
 .main-nav__toggler {
@@ -72,6 +73,7 @@
     margin-top: 18px;
     width: 44px;
     height: 18px;
+    top: 0px;
   }
 
   .main-nav__toggler {
@@ -87,7 +89,6 @@
   .main-nav--closed {
     .main-nav__toggler {
       display: block;
-      // width: 72px;
       height: 50px;
       background-color: $bittersweet;
       position: absolute;
