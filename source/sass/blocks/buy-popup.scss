@@ -1,5 +1,4 @@
 .buy-popup {
-  display: flex;
   display: none;
   position: fixed;
   top: 50px;
@@ -7,6 +6,7 @@
   width: 726px;
   height: 444px;
   background-color: $softpeach;
+  z-index: 15;
 }
 
 .buy-popup__button {
@@ -84,6 +84,10 @@
   }
 }
 
+.buy-popup__show {
+  display: flex;
+}
+
 @media (max-width: $tablet-width) {
   .buy-popup {
     width: 100%;
@@ -120,3 +124,4 @@
     }
   }
 }
+

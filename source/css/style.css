@@ -125,6 +125,8 @@ a {
   margin-right: 62px;
   position: relative;
   letter-spacing: 2px; }
+  .intro__button:hover {
+    background-color: #F17D4B; }
   @media (min-width: 767px) and (max-width: 1023px) {
     .intro__button {
       width: 250px;
@@ -220,7 +222,8 @@ a {
     margin-left: 90px;
     margin-right: 14px;
     position: relative;
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #141517; }
     .main-nav__item--tel::before {
       content: '';
       background-image: url("../../img/phone-logo.svg");
@@ -231,6 +234,15 @@ a {
       left: -38px;
       height: 30px;
       width: 30px; }
+    .main-nav__item--tel:hover {
+      color: #FE7865; }
+      .main-nav__item--tel:hover::before {
+        background-image: url(../../img/phone-logo2.svg); }
+
+.main-nav__link {
+  color: #141517; }
+  .main-nav__link:hover {
+    color: #FE7865; }
 
 .main-nav__link--logo {
   margin-right: auto;
@@ -260,7 +272,8 @@ a {
     height: 18px;
     top: 0px; }
   .main-nav__toggler {
-    width: 72px; }
+    width: 72px;
+    outline: none; }
     .main-nav__toggler::before {
       right: 25px;
       width: 22.5px; }
@@ -408,7 +421,10 @@ a {
 .tours__link {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 37px; }
+  margin-bottom: 37px;
+  position: relative; }
+  .tours__link:hover .tours__popup {
+    display: flex; }
 
 .tours__name {
   color: #2C2E3F;
@@ -427,6 +443,33 @@ a {
   left: calc(50% - 107.5px);
   border: none;
   margin: 0; }
+
+.tours__popup {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 62px);
+  background-color: rgba(20, 21, 23, 0.6);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none; }
+
+.tours__popup-text {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  width: 266px;
+  height: 77px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 @media (max-width: 1023px) {
   .tours {
@@ -610,6 +653,8 @@ a {
   display: block;
   font-weight: 700;
   font-size: 12px; }
+  .tour-view__buy:hover {
+    background-color: #F17D4B; }
   @media (min-width: 767px) and (max-width: 1023px) {
     .tour-view__buy {
       width: 250px;
@@ -852,6 +897,8 @@ a {
   margin-top: auto;
   margin-left: 29px;
   margin-bottom: 28px; }
+  .price__buy-tour:hover {
+    background-color: #F17D4B; }
   @media (min-width: 767px) and (max-width: 1023px) {
     .price__buy-tour {
       width: 250px;
@@ -1170,11 +1217,13 @@ a {
   font-size: 14px;
   line-height: 17px;
   padding-left: 12px;
-  font-family: 'Montserrat', 'Arial', sans-serif; }
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  outline: none; }
   .form__input:first-child {
     margin-right: 20px; }
   .form__input--tel {
-    padding-left: 25px; }
+    padding-left: 25px;
+    position: relative; }
 
 .form__button {
   height: 50px;
@@ -1192,6 +1241,8 @@ a {
   font-weight: 700;
   font-size: 12px;
   margin-bottom: 50px; }
+  .form__button:hover {
+    background-color: #F17D4B; }
   @media (min-width: 767px) and (max-width: 1023px) {
     .form__button {
       width: 250px;
@@ -1463,14 +1514,14 @@ a {
     margin: 23px auto 10px; } }
 
 .buy-popup {
-  display: flex;
   display: none;
   position: fixed;
   top: 50px;
   left: calc(50% - 363px);
   width: 726px;
   height: 444px;
-  background-color: #FBF8F8; }
+  background-color: #FBF8F8;
+  z-index: 15; }
 
 .buy-popup__button {
   height: 50px;
@@ -1489,6 +1540,8 @@ a {
   font-size: 12px;
   margin: 0 auto 90px;
   margin-top: auto; }
+  .buy-popup__button:hover {
+    background-color: #F17D4B; }
   @media (min-width: 767px) and (max-width: 1023px) {
     .buy-popup__button {
       width: 250px;
@@ -1559,6 +1612,9 @@ a {
   .buy-popup__close::after {
     transform: rotate(-45deg); }
 
+.buy-popup__show {
+  display: flex; }
+
 @media (max-width: 767px) {
   .buy-popup {
     width: 100%;
@@ -1622,5 +1678,16 @@ a {
     transform: rotate(45deg); }
   .success-popup__close::after {
     transform: rotate(-45deg); }
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10000px;
+  z-index: 10;
+  background-color: #000000;
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

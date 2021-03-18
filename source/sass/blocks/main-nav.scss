@@ -21,6 +21,7 @@
     margin-right: 14px;
     position: relative;
     text-decoration: underline;
+    color: $woodsmoke;
 
     &::before {
       content: '';
@@ -33,6 +34,22 @@
       height: 30px;
       width: 30px;
     }
+
+    &:hover {
+      color: $bittersweet;
+
+      &::before {
+        background-image: url(../../img/phone-logo2.svg);
+      }
+    }
+  }
+}
+
+.main-nav__link {
+  color: $woodsmoke;
+
+  &:hover {
+    color: $bittersweet;
   }
 }
 
@@ -78,6 +95,7 @@
 
   .main-nav__toggler {
     width: 72px;
+    outline: none;
 
     &::before {
       right: 25px;

@@ -4,12 +4,16 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Путешествие по Европе</title>
-    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/style.min.css'>
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-500.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-600.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font">
+
   </head>
   <body>
     <header class="header">
-      <!-- Классы "main-nav--opened" и "main-nav--closed" переключают состояния меню. Класс "no-js" обеспечивает работоспособность меню при отсутствии JavaScript. -->
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--opened no-js">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#travel"> О путешествии</a>
@@ -28,56 +32,70 @@
       </nav>
     </header>
     <main class="main">
-        <section class="main__intro intro">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/preview-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="img/preview-tablet.jpg">
-              <img class="intro__picture" src="img/preview-mobile.jpg" alt="Логотип Седона">
-            </picture>
-            <div class="intro__wrapper">
-              <h1 class="intro__title">Путешествие по Европе</h1>
-              <p class="intro__text">В этом туре вы откроете для себя Eвропу в новом свете. Вас ждёт: море, горы, а также потрясающая красота природы</p>
-              <button type="button" class="intro__button">Смотреть тур</button>
-            </div>
-        </section>
-      </div>
+      <section class="main__intro intro">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/preview-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/preview-tablet.jpg">
+            <img class="intro__picture" src="img/preview-mobile.jpg" alt="Логотип Седона">
+          </picture>
+          <div class="intro__wrapper">
+            <h1 class="intro__title">Путешествие по Европе</h1>
+            <p class="intro__text">В этом туре вы откроете для себя Eвропу в новом свете. Вас ждёт: море, горы, а также потрясающая красота природы</p>
+            <button type="button" class="intro__button">Смотреть тур</button>
+          </div>
+      </section>
       <section class="main__tours tours" id="travel">
         <h2 class="tours__title">Места посещения</h2>
         <p class="tours__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
         <ul class="tours__list">
           <li class="tours__item">
-            <a class="tours__link" href="#Greece">
+            <a class="tours__link" href="#country">
               <p class="tours__name">Греция</p>
               <img class="tours__picture" src="img/greece.jpg" width="350" height="430" alt="Греция">
+              <div class="tours__popup">
+                <p class="tours__popup-text">Смотреть подробнее</p>
+              </div>
             </a>
             </li>
           <li class="tours__item">
-            <a class="tours__link" href="#Albania">
+            <a class="tours__link" href="#country">
               <p class="tours__name">Албания</p>
               <img class="tours__picture" src="img/albania.jpg" width="350" height="430" alt="Албания">
+              <div class="tours__popup">
+                <p class="tours__popup-text">Смотреть подробнее</p>
+              </div>
             </a>
           </li>
           <li class="tours__item">
-            <a class="tours__link" href="#Macedonia">
+            <a class="tours__link" href="#country">
               <p class="tours__name">Македония</p>
               <img class="tours__picture" src="img/macedonia.jpg" width="350" height="430" alt="Македония">
+              <div class="tours__popup">
+                <p class="tours__popup-text">Смотреть подробнее</p>
+              </div>
             </a>
           </li>
           <li class="tours__item">
-            <a class="tours__link" href="#Montenegro">
+            <a class="tours__link" href="#country">
               <p class="tours__name">Черногория</p>
               <img class="tours__picture" src="img/montenegro.jpg" width="350" height="430" alt="Черногория">
+              <div class="tours__popup">
+                <p class="tours__popup-text">Смотреть подробнее</p>
+              </div>
             </a>
           </li>
           <li class="tours__item">
-            <a class="tours__link" href="#Croatia">
+            <a class="tours__link" href="#country">
               <p class="tours__name">Хорватия</p>
               <img class="tours__picture" src="img/croatia.jpg" width="350" height="430" alt="Хорватия">
+              <div class="tours__popup">
+                <p class="tours__popup-text">Смотреть подробнее</p>
+              </div>
             </a>
           </li>
         </ul>
       </section>
-      <section class="main__countries">
+      <section class="main__countries" id="country">
         <ul class="country-selection">
           <li class="country-selection__item">
             <a class="country-selection__link" href="">Греция</a>
@@ -106,7 +124,7 @@
             <div class="tour-view__feedback tour-feedback">
               <h4 class="tour-feedback__title">Отзывы</h4>
               <p class="tour-feedback__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
-              <img class="tour-feedback__user-logo" src="img/Влада Г.jpg" width="38" height="38" alt="">
+              <img class="tour-feedback__user-logo" src="img/greece-user.jpg" width="38" height="38" alt="">
               <p class="tour-feedback__user-name">Влада Голицина</p>
             </div>
           </li>
@@ -120,7 +138,7 @@
             <div class="tour-view__feedback tour-feedback">
               <h4 class="tour-feedback__title">Отзывы</h4>
               <p class="tour-feedback__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
-              <img class="tour-feedback__user-logo" src="img/Маришка.jpg" width="38" height="38" alt="">
+              <img class="tour-feedback__user-logo" src="img/albania-user.jpg" width="38" height="38" alt="">
               <p class="tour-feedback__user-name">Маришка</p>
             </div>
           </li>
@@ -134,7 +152,7 @@
             <div class="tour-view__feedback tour-feedback">
               <h4 class="tour-feedback__title">Отзывы</h4>
               <p class="tour-feedback__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
-              <img class="tour-feedback__user-logo" src="img/Михаил К.jpg" width="38" height="38" alt="">
+              <img class="tour-feedback__user-logo" src="img/macedonia-user.jpg" width="38" height="38" alt="">
               <p class="tour-feedback__user-name">Михаил Кузьмин</p>
             </div>
           </li>
@@ -148,7 +166,7 @@
             <div class="tour-view__feedback tour-feedback">
               <h4 class="tour-feedback__title">Отзывы</h4>
               <p class="tour-feedback__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
-              <img class="tour-feedback__user-logo" src="img/Анастасия М.jpg" width="38" height="38" alt="">
+              <img class="tour-feedback__user-logo" src="img/montenegro-user.jpg" width="38" height="38" alt="">
               <p class="tour-feedback__user-name">Анастасия Мей</p>
             </div>
           </li>
@@ -162,7 +180,7 @@
             <div class="tour-view__feedback tour-feedback">
               <h4 class="tour-feedback__title">Отзывы</h4>
               <p class="tour-feedback__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
-              <img class="tour-feedback__user-logo" src="img/Владимир М.jpg" width="38" height="38" alt="">
+              <img class="tour-feedback__user-logo" src="img/croatia-user.jpg" width="38" height="38" alt="">
               <p class="tour-feedback__user-name">Владимир Мулицин</p>
             </div>
           </li>
@@ -209,7 +227,7 @@
           <h4 class="question__title">У Вас остались вопросы?</h4>
           <p class="question__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
           <form class="question__form form" action="https://echo.htmlacademy.ru/"   method="post">
-            <input class="form__input form__input--tel" type="tel" name="Телефон" placeholder="+7  Введите 10   цифр номера">
+            <input class="form__input form__input--tel" type="tel" name="Телефон" placeholder="+7  Введите 10   цифр номера" required>
             <input class="form__input" type="email" name="E-mail" placeholder="E-mail">
             <button class="form__button" type="submit">Отправить</button>
           </form>
@@ -255,8 +273,8 @@
     <div class="buy-popup">
       <img class="buy-popup__picture" src="img/buy-popup.jpg" alt="Морской бриз">
       <form class="buy-popup__form" action="https://echo.htmlacademy.ru/" method="post">
-        <legend class="buy-popup__title">Купить тур</legend>
-        <input class="buy-popup__input buy-popup__input--tel" type="tel" name="Телефон" placeholder="+7  Введите 10 цифр номера">
+        <p class="buy-popup__title">Купить тур</p>
+        <input class="buy-popup__input buy-popup__input--tel" type="tel" name="Телефон" placeholder="+7  Введите 10 цифр номера" required>
         <input class="buy-popup__input" type="email" name="E-mail" placeholder="E-mail">
         <button class="buy-popup__button" type="submit">Отправить</button>
       </form>
@@ -266,5 +284,7 @@
       <p class="success-popup__text">Форма успешно отправлена, спасибо! :)</p>
       <button class="success-popup__close" type="button" aria-label="Закрыть форму"></button>
     </div>
+    <div class="overlay"></div>
+    <script src="js/script.js"></script>
   </body>
 </html>

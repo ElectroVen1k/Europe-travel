@@ -49,6 +49,13 @@
   display: flex;
   flex-direction: column-reverse;
   margin-bottom: 37px;
+  position: relative;
+
+  &:hover {
+    .tours__popup {
+      display: flex;
+    }
+  }
 }
 
 .tours__name {
@@ -68,6 +75,35 @@
   left: calc(50% - 107.5px);
   border: none;
   margin: 0;
+}
+
+.tours__popup {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 62px);
+  background-color: rgba(20, 21, 23, 0.6);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.tours__popup-text {
+  color: $white;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  width: 266px;
+  height: 77px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: $desktop-width) {

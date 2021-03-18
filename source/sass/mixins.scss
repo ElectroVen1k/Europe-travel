@@ -14,6 +14,10 @@
   font-weight: 700;
   font-size: 12px;
 
+  &:hover {
+    background-color: $Jaffa;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 250px;
     height: 50px;

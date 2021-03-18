@@ -15,6 +15,7 @@
   line-height: 17px;
   padding-left: 12px;
   font-family: 'Montserrat', 'Arial', sans-serif;
+  outline: none;
 
   &:first-child {
     margin-right: 20px;
@@ -22,6 +23,7 @@
 
   &--tel {
     padding-left: 25px;
+    position: relative;
   }
 }
 
