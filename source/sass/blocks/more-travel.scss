@@ -1,6 +1,8 @@
 .more-travel {
   margin-left: 12px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 
   &::after {
     content: '';
@@ -19,17 +21,80 @@
   line-height: 32px;
   color: $woodsmoke;
   margin: 0;
+  width: 100%;
+  margin-bottom: 12px;
 }
 
 .more-travel__list {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: calc(100% / 3);
   font-size: 14px;
   line-height: 17px;
   color: rgba(20, 21, 23, 0.5);
-  grid-column-gap: 5px;
-  grid-row-gap: 10px;
   padding: 0;
-  margin-top: 22px;
+  margin: 0;
+}
+
+.more-travel__item {
+  margin-bottom: 10px;
+}
+
+@media (max-width: $desktop-width) {
+  .more-travel {
+    margin: 0;
+    margin-left: 20px;
+    min-width: 395px;
+
+    &::after {
+      height: 179px;
+      right: -2px;
+    }
+  }
+
+  .more-travel__title {
+    margin-bottom: 22px;
+  }
+
+  .more-travel__list {
+    margin-bottom: 10px;
+    width: calc((100% - 20px)/ 3);
+  }
+
+  .more-travel__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .more-travel {
+    margin: 0 14px 0 3px;
+    justify-content: center;
+    min-width: 0;
+
+    &::after {
+      width: calc(100% - 17px);
+      height: 1px;
+      left: 9px;
+      bottom: 2px;
+      top: auto;
+      right: auto;
+    }
+  }
+
+  .more-travel__title {
+    text-align: center;
+  }
+
+  .more-travel__list {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  .more-travel__item {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }

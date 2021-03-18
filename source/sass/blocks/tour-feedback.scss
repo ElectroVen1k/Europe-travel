@@ -57,3 +57,65 @@
   margin-top: 10px;
   margin-bottom: 38px;
 }
+
+@media (max-width: $desktop-width) {
+  .tour-feedback {
+    position: absolute;
+    bottom: -32px;
+    top: auto;
+    left: calc(50% - 191px);
+    min-height: 367px;
+  }
+
+  .tour-feedback__user-logo {
+    margin-left: 31px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .tour-feedback {
+    width: 268px;
+    min-height: 431px;
+    display: block;
+    top: auto;
+    bottom: -68px;
+    left: calc(50% - 135px);
+  }
+
+  .tour-feedback__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 33px auto 32px;
+
+    &::after {
+      content: '';
+      width: 68px;
+      height: 1px;
+      background-color: $bittersweet;
+      position: absolute;
+      bottom: -11px;
+      left: 100px;
+    }
+  }
+
+  .tour-feedback__text {
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .tour-feedback__user-logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    margin-top: 15px;
+  }
+
+  .tour-feedback__user-name {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 38px;
+  }
+}

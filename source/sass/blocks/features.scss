@@ -34,3 +34,29 @@
     top: 10px;
   }
 }
+
+
+@media (max-width: $desktop-width) {
+  .features {
+    margin-left: 47px;
+    margin-right: 15px;
+  }
+
+  .features__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .features {
+    margin: 31px 17px 18px 47px;
+
+    &--econom {
+      margin: 31px 17px 22px 47px;
+    }
+  }
+
+  .features__item {
+    margin-bottom: 9px;
+  }
+}

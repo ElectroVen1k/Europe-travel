@@ -4,16 +4,6 @@
   margin-left: 102px;
   position: relative;
 
-  p::before {
-    content: '';
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: -2px;
-    left: -42px;
-  }
-
   &::after {
     content: '';
     width: 1px;
@@ -34,7 +24,7 @@
   margin-bottom: 8px;
 }
 
-.contacts__mail {
+.contacts__email {
   font-size: 14px;
   line-height: 17px;
   text-decoration: underline;
@@ -44,7 +34,18 @@
   position: relative;
 
   &::before {
+    content: '';
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -2px;
+    left: -42px;
     background-image: url(../../img/mail.svg);
+  }
+
+  &--short {
+    display: none;
   }
 }
 
@@ -58,6 +59,83 @@
   position: relative;
 
   &::before {
+    content: '';
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -2px;
+    left: -42px;
     background-image: url(../../img/phone-logo3.svg);
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .contacts {
+    margin: 0;
+    margin-left: 53px;
+    margin-right: 13px;
+  }
+
+  .contacts__email {
+    margin: 14px 0 20px;
+    padding-left: 40px;
+    width: min-content;
+
+    &::before {
+      left: 0;
+    }
+
+    &--short {
+      display: block;
+    }
+
+    &--full {
+      display: none;
+    }
+  }
+
+  .contacts__tel {
+    margin: 0px 0 20px;
+    padding-left: 40px;
+    width: min-content;
+    white-space: nowrap;
+    text-align: center;
+
+    &::before {
+      left: 0px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    margin-left: 0;
+    grid-row: 2/3;
+    text-align: center;
+
+    &::after {
+      width: calc(100% - 17px);
+      height: 1px;
+      left: 9px;
+      bottom: 5px;
+      top: auto;
+      right: auto;
+      }
+  }
+
+  .contacts__title {
+    margin-top: 28px;
+  }
+
+  .contacts__email {
+    text-align: center;
+    margin: 14px auto 20px;
+    padding-left: 40px;
+    width: min-content;
+  }
+
+  .contacts__tel {
+    margin: 0px auto 20px;
   }
 }

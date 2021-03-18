@@ -2,5 +2,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 75px;
+}
+
+@media (max-width: $desktop-width) {
+  .footer {
+    grid-template-columns: 54% 46%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .footer {
+    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 100%;
+    margin-bottom: 25px;
+  }
 }

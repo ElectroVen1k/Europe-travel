@@ -1,23 +1,28 @@
 .intro {
   max-width: none;
   color: $white;
-  display: flex;
-  max-width: 1170px;
   margin: 0 auto;
+  display: flex;
+
 }
 
-.intro__background-container {
-  background-image: url('../../img/preview-desktop.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 860px;
+.intro__picture {
+  width: 100%;
+  height: 860px;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
 }
 
 .intro__wrapper {
-  margin-left: auto;
-  margin-top: 185px;
-  margin-right: 70px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 186px;
+  padding-right: 137px;
 }
 
 .intro__title {
@@ -33,6 +38,7 @@
 .intro__text {
   margin: 0px;
   margin-bottom: 34px;
+  margin-right: 27px;
   font-size: 16px;
   line-height: 27px;
   max-width: 375px;
@@ -43,16 +49,86 @@
 .intro__button {
   @include button(340px, 74px);
   padding-right: 134px;
+  margin-right: 62px;
   position: relative;
+  letter-spacing: 2px;
   &::after {
     content: '';
       background-image: url('../../img/arrow-down.svg');
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
-      bottom: 28px;
+      bottom: calc(50% - 7px);
       right: 40px;
       height: 15px;
       width: 15px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .intro__picture {
+    height: 344px;
+  }
+
+  .intro__wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .intro__title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 45px;
+    padding-top: 60px;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+
+  .intro__text {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 9px;
+  }
+
+  .intro__button {
+    padding-right: 67px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .intro__title {
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 280px;
+    padding-top: 82px;
+    margin-bottom: 81px;
+  }
+
+  .intro__wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .intro__text {
+    color: $dark;
+    max-width: 288px;
+    padding-top: 20px;
+  }
+
+  .intro__picture {
+    height: 235px;
+  }
+
+  .intro__button {
+    width: 288px;
+    padding-right: 105px;
+    margin-top: 20px;
   }
 }

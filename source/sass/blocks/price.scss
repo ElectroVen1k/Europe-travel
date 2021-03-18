@@ -2,8 +2,11 @@
   color: $dark;
   font-size: 16px;
   line-height: 32px;
-  max-width: 1170px;
+  max-width: 1180px;
+  padding-left: 10px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .price__title {
@@ -20,6 +23,7 @@
 
   &--econom {
     color: rgba(20, 21, 23, 0.7);
+    letter-spacing: -1.27px;
   }
 }
 
@@ -52,7 +56,8 @@
   flex-direction: column;
 
   &--all-inclusive {
-    border: 2px solid $bittersweet;
+    border: 3px solid $bittersweet;
+    box-sizing: border-box;
 
     .price__text::after {
       background-color: $bittersweet;
@@ -91,4 +96,127 @@
   margin-top: auto;
   margin-left: 29px;
   margin-bottom: 28px;
+}
+
+@media (max-width: 1180px) {
+  .price {
+    display: flex;
+    justify-content: center;
+    margin-top: 112px;
+    margin-bottom: 97px;
+    padding-left: 0px;
+    column-gap: 50px;
+  }
+
+  .price__container {
+    width: 286px;
+    margin-top: 0;
+    margin-bottom: 26px;
+    margin-right: 0px;
+    min-height: 626px;
+    box-sizing: content-box;
+
+    &--all-inclusive {
+      box-sizing: content-box;
+    }
+  }
+
+  .price__title {
+    margin: 28px auto 9px;
+    text-align: center;
+
+    &--all-inclusive {
+      font-size: 24px;
+      line-height: 34px;
+      margin: 28px auto 11px;
+
+      .price__cost {
+        margin-top: 10px;
+      }
+    }
+
+    &--econom {
+      font-size: 24px;
+      line-height: 38px;
+      margin: 28px auto 9px;
+
+      .price__cost {
+        margin-top: 8px;
+        margin-left: -13px;
+      }
+    }
+  }
+
+  .price__text {
+    text-align: center;
+    margin: 0 15px 31px;
+
+    &::after {
+      bottom: -9px;
+      width: 248px;
+    }
+  }
+
+  .price__cost {
+    display: inline-block;
+    width: 100%;
+    position: static;
+    text-align: center;
+  }
+
+  .price__buy-tour {
+    margin-top: auto;
+    width: 286px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .price {
+    margin-top: 25px;
+  }
+
+  .price__container {
+    min-height: 613px;
+  }
+
+  .price__title {
+    margin: 30px auto 12px;
+    text-align: center;
+
+    &--all-inclusive {
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    &--econom {
+      font-size: 24px;
+      line-height: 38px;
+      margin: 28px auto 9px;
+    }
+  }
+
+  .price__text {
+    margin: 0 15px;
+    text-align: center;
+
+    &::after {
+      bottom: -9px;
+      width: 248px;
+    }
+  }
+
+  .price__cost {
+    display: inline-block;
+    width: 100%;
+    position: static;
+    margin-top: 10px;
+  }
+
+  .price__buy-tour {
+    margin: 0;
+    margin-top: auto;
+    width: 288px;
+  }
 }

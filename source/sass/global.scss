@@ -1,6 +1,6 @@
-$mobile-width: 767px;
-$tablet-width: 768px;
-$desktop-width: 1124px;
+$mobile-width: 320px;
+$tablet-width: 767px;
+$desktop-width: 1023px;
 
 body {
   font-family: 'Montserrat', 'Arial', sans-serif;
@@ -29,4 +29,13 @@ a {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (max-width: $desktop-width) {
+
+}
+
+
+@media (max-width: $tablet-width) {
+
 }

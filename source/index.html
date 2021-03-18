@@ -25,16 +25,21 @@
           </li>
           <li class="main-nav__item main-nav__item--tel"> +7 (499) -784-684-46</li>
         </ul>
+        <button type="button" class="main-nav__toggler"></button>
       </nav>
     </header>
     <main class="main">
-      <div class="intro__background-container">
         <section class="main__intro intro">
-          <div class="intro__wrapper">
-            <h1 class="intro__title">Путешествие по Европе</h1>
-            <p class="intro__text">В этом туре вы откроете для себя Eвропу в новом свете. Вас ждёт: море, горы, а также потрясающая красота природы</p>
-            <button type="button" class="intro__button">Смотреть тур</button>
-          </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/preview-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/preview-tablet.jpg">
+              <img class="intro__picture" src="img/preview-mobile.jpg" alt="Логотип Седона">
+            </picture>
+            <div class="intro__wrapper">
+              <h1 class="intro__title">Путешествие по Европе</h1>
+              <p class="intro__text">В этом туре вы откроете для себя Eвропу в новом свете. Вас ждёт: море, горы, а также потрясающая красота природы</p>
+              <button type="button" class="intro__button">Смотреть тур</button>
+            </div>
         </section>
       </div>
       <section class="main__tours tours" id="travel">
@@ -101,7 +106,7 @@
             <img class="tour-view__picture" src="img/greece.jpg" alt="" width="430" height="596">
             <div class="tour-view__feedback tour-feedback">
               <h4 class="tour-feedback__title">Отзывы</h4>
-              <p class="tour-feedback__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
+              <p class="tour-feedback__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
               <img class="tour-feedback__user-logo" src="img/Влада Г.jpg" width="38" height="38" alt="">
               <p class="tour-feedback__user-name">Влада Голицина</p>
             </div>
@@ -199,9 +204,9 @@
           <p class="price-packages__tel">+7 (499) -784-684-46</p>
         </div>
       </section>
-      <section class="main__question">
-        <img src="img/question.jpg" alt="Морской закат" width="844" height="455">
-        <div class="question">
+      <section class="main__question question">
+        <img class="question__picture" src="img/question.jpg" alt="Морской закат" width="844" height="455">
+        <div class="question__wrapper">
           <h4 class="question__title">У Вас остались вопросы?</h4>
           <p class="question__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
           <form class="question__form form" action="https://echo.htmlacademy.ru/"   method="post">
@@ -217,30 +222,35 @@
         <h5 class="more-travel__title">Следующие путешествия</h5>
         <ul class="more-travel__list">
           <li class="more-travel__item">Марсель</li>
-          <li class="more-travel__item">Сардиния</li>
-          <li class="more-travel__item">Корс</li>
           <li class="more-travel__item">Ним</li>
-          <li class="more-travel__item">Палермо</li>
-          <li class="more-travel__item">Ницца</li>
           <li class="more-travel__item">Монпелье</li>
-          <li class="more-travel__item">Катания</li>
-          <li class="more-travel__item">Монако</li>
           <li class="more-travel__item">Барселона</li>
-          <li class="more-travel__item">Неаполь</li>
-          <li class="more-travel__item">Динь-ле-бэн</li>
           <li class="more-travel__item">Пальма</li>
+        </ul>
+        <ul class="more-travel__list">
+          <li class="more-travel__item">Сардиния</li>
+          <li class="more-travel__item">Палермо</li>
+          <li class="more-travel__item">Катания</li>
+          <li class="more-travel__item">Неаполь</li>
           <li class="more-travel__item">Рим</li>
+        </ul>
+        <ul class="more-travel__list">
+          <li class="more-travel__item">Корс</li>
+          <li class="more-travel__item">Ницца</li>
+          <li class="more-travel__item">Монако</li>
+          <li class="more-travel__item">Динь-ле-бэн</li>
           <li class="more-travel__item">Гренобль</li>
         </ul>
       </div>
       <div class="footer__contacts contacts">
         <h5 class="contacts__title">Наши контакты</h5>
-        <p class="contacts__mail">puteshestviemechta@gmail.ru</p>
+        <p class="contacts__email contacts__email--full">puteshestviemechta@gmail.ru</p>
+        <p class="contacts__email contacts__email--short">Почта</p>
         <p class="contacts__tel">+7 (499) -784-684-46</p>
       </div>
       <div class="footer__group-tour group-tour">
         <h5 class="group-tour__title">Корпоративные путешествия</h5>
-        <p class="group-tour__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+        <p class="group-tour__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются отличным времяпрепровождением</p>
       </div>
     </footer>
   </body>
